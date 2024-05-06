@@ -1,5 +1,30 @@
-public class stud {
-    public static void main(){
-    system.debug('hello');
-    }   
+public class Linear_Search {
+    public static void find(integer key){
+        integer s = -1;
+        system.debug('Linear Search');
+        list<integer> item = new list<integer> ();
+        item.add(1);
+        item.add(2);
+        item.add(3);
+        item.add(4);
+        item.add(5);
+        item.add(6);
+        item.add(7);
+        item.add(8);
+        
+        system.debug('List: '+ item);
+        for(integer i=0;i<item.size();i++){
+            if(key == item[i]){
+                s = 1;
+                break; // Stop the loop once the key is found
+            }
+        }
+        
+        if(s == 1){
+            system.debug('Key Found!');
+        }
+        else{
+            system.debug('Key Not Found!');
+        }
+    }
 }
